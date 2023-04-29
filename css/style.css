@@ -1,0 +1,264 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Navigation Bar */
+#navbar{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li {
+    font-size: 1.4rem;
+    padding: 5px;
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Main Logo */
+#logo{
+    height: 90px;
+}
+
+#logo img{
+    height: 100%;
+}
+
+/* Home */
+#home{
+    display: flex;
+    height: 330px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    z-index: -2;
+    height: 440px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#home h2{
+    position: relative;
+    font-size: 2.8rem;
+    padding: 15px;
+}
+
+#home p{
+    font-size: 1.4rem;
+}
+
+#btn{
+    margin: 10px;
+    padding: 5px;
+    background-color: #584b4b;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #523f3f;
+}
+
+/* Services */
+#services-head{
+    text-align: center;
+    padding: 30px;
+    font-size: 1.3rem;
+}
+
+#services-head h2{
+    font-size: 2.5rem;
+}
+
+#services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#services .cards{
+    text-align: center;
+    width: 370px;
+    border: 2px solid #823a3a;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 237);
+}
+
+#services .cards img{
+    margin-top: 15px;
+    height: 100px;
+    width: 100px;
+}
+
+#services .cards p{
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+}
+
+/* Client Page */
+.client-item{
+    padding: 34px;
+    display: flex;
+    align-items: center;
+}
+
+#cl-images{
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#client{
+    position: relative;
+}
+
+#client #cl-images{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#client #cl-images img{
+    height: 100px;
+}
+
+#client::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#client h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Contact Us */
+#contact{
+    position: relative;
+}
+
+
+#contact h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.form-input{
+    margin: auto;
+    width: 100%;
+    padding: 6px;
+    /* max-width: 100%; */
+}
+
+.form-input input{
+    /* box-sizing: border-box; */
+    display: block;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 100%;
+    height: 15px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.form-input textarea{
+    /* box-sizing: border-box; */
+    display: block;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 100%;
+    height: 80px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.form-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-container form{
+    width: 40%;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Copyright Footer */
+.copyright{
+    width: 100%;
+    height: 20px;
+    padding: 13px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
